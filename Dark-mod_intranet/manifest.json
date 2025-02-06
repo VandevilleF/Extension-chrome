@@ -1,11 +1,13 @@
 {
 	"manifest_version": 3,
-	"name": "My Extension",
+	"name": "Dark Mode Intranet",
 	"version": "1.0",
-	"description": "Change background color",
+	"description": "Active un mode sombre sur l'intranet",
 	"permissions": [
 		"scripting",
-		"activeTab"
+		"activeTab",
+		"storage",
+		"WebNavigation"
 	],
 	"host_permissions": [
 		"http://*/*",
