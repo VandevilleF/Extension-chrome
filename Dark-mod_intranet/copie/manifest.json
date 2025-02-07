@@ -9,13 +9,8 @@
 		"storage"
 	],
 	"host_permissions": [
-		"https://intranet.hbtn.io/"
-	],
-	"content_scripts": [
-		{
-			"matches": ["https://intranet.hbtn.io/*"],
-			"js": ["content.js"]
-		}
+		"http://*/*",
+		"https://*/*"
 	],
 	"action": {
 		"default_popup": "popup.html"
