@@ -26,6 +26,8 @@ function changeDivBackgrounds() {
   // BoxShadow panel
   const panelsboxshadow = document.querySelectorAll('.panel.panel-default');
   const panelheaderboxshadow = document.querySelectorAll('.project-header');
+  const projectcircle = document.querySelectorAll('.project-circle');
+  const userselecttime = document.querySelectorAll('.user-select-none');
 
   // Navbars elements
   const layoutbar = document.getElementById('student-switch-curriculum');
@@ -79,6 +81,12 @@ function changeDivBackgrounds() {
   })
   panelheaderboxshadow.forEach(panel => {
     panel.style.boxShadow = '5px 5px 10px 1px rgba(254, 254, 254, 0.1)';
+  })
+  projectcircle.forEach(circle => {
+    circle.style.boxShadow = '10px 20px 10px rgba(64, 64, 64, 0.5)';
+  })
+  userselecttime.forEach(time => {
+    time.style.boxShadow = '0px 0px 10px 2px rgba(64, 64, 64, 0.5)';
   })
 
   // Change color of panel project header
