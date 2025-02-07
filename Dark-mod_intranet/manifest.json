@@ -9,8 +9,20 @@
 		"storage"
 	],
 	"host_permissions": [
-		"http://*/*",
-		"https://*/*"
+		"https://intranet.hbtn.io/"
+	],
+	"content_scripts": [
+		{
+			"matches": ["https://intranet.hbtn.io/*"],
+			"js": ["content.js"],
+			"run_at": "document_start"
+		}
+	],
+	"web_accessible_resources": [
+		{
+			"resources": ["dark-mode.css"],
+			"matches": ["<all_urls>"]
+		}
 	],
 	"action": {
 		"default_popup": "popup.html"
